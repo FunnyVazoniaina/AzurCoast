@@ -20,8 +20,8 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col justify-start md:justify-center h-full max-w-7xl mx-auto px-6 md:px-12 pt-16 md:pt-24">
         <div className="max-w-lg text-white">
           <h1 className="text-4xl md:text-6xl mb-6">
-            <span className="font-extrabold">Votre évasion </span>
-            <span className="font-semibold">sur la côte d'Azur !</span>
+            <span className="font-extrabold">Votre évasion </span> <br />
+            <span className="font-medium">sur la Côte d'Azur !</span>
           </h1>
           <p className="text-sm md:text-base leading-relaxed">
             Blu Azur vous invite à découvrir le charme de Saint-Raphaël, une
