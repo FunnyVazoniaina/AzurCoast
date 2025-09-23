@@ -19,11 +19,11 @@ export default function DiversitySection() {
       image: montagne,
       title: "Le sport au rythme de la Méditerranée",
       description:
-        "Du légendaire Grand Prix de Monaco aux défis de l’Ironman, en passant par le Marathon des Alpes-Maritimes, la région vibre au rythme des grands événements sportifs. Cyclisme sur la Route des Crêtes, golf sur des parcours prestigieux et voile lors des Régates de Saint-Tropez complètent ce décor idéal pour les amateurs de sport et d’adrénaline.  ",
+        "Du légendaire Grand Prix de Monaco aux défis de l’Ironman, en passant par le Marathon des Alpes-Maritimes, la région vibre au rythme des grands événements sportifs. Cyclisme sur la Route des Crêtes, golf sur des parcours prestigieux et voile lors des Régates de Saint-Tropez complètent ce décor idéal pour les amateurs de sport et d’adrénaline.",
     },
     {
       image: gastronomie,
-      title: "Une destination gourmande et authentique.",
+      title: "Une destination gourmande et authentique",
       description:
         "Les marchés provençaux dévoilent des saveurs du terroir, entre fromages affinés, huile d’olive et spécialités méditerranéennes. Vignerons passionnés et restaurants raffinés offrent une expérience gastronomique où tradition et créativité se rencontrent dans un cadre enchanteur.",
     },
@@ -44,17 +44,29 @@ export default function DiversitySection() {
   return (
     <section id="diversity" className="w-full py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        {/* Grille de cartes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {diversities.map((item, index) => (
-            <Card
-              key={index}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
-        </div>
+        {/* Grille personnalisée */}
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+  {diversities.slice(0, 2).map((item, index) => (
+    <div key={index} className="md:col-span-3 flex">
+      <Card
+        image={item.image}
+        title={item.title}
+        description={item.description}
+      />
+    </div>
+  ))}
+
+  {diversities.slice(2).map((item, index) => (
+    <div key={index} className="md:col-span-2 flex">
+      <Card
+        image={item.image}
+        title={item.title}
+        description={item.description}
+      />
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );
