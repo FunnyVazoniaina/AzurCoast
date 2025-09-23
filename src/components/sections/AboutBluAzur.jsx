@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutBluAzur() {
   return (
-    <section className="bg-[#F9FAFB] py-16 px-6">
+    <section id="about" className="bg-[#F9FAFB] py-16 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
         {/* Colonne gauche (texte) */}
         <div>

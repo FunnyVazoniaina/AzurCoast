@@ -7,9 +7,13 @@ export default function Header() {
   const [active, setActive] = useState("about");
 
   const menuItems = [
+    { id: "home", label: "Accueil", href: "#home" },
     { id: "about", label: "À propos", href: "#about" },
     { id: "location", label: "Localisation", href: "#location" },
-    { id: "activities", label: "Activités", href: "#activities" }
+    { id: "activities", label: "Activités", href: "#activities" },
+    { id: "booking", label: "Réservation", href: "#book" },
+    { id: "contact", label: "Contact", href: "#contact" }
+
   ];
 
   return (

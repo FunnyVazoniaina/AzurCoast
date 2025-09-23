@@ -10,6 +10,7 @@ export default function HeroSection() {
   const images = [img1, img2, img3];
   return (
     <section
+      id="home"
       className="w-full h-screen relative bg-cover bg-center"
       style={{ backgroundImage: `url(${heroImg})` }}
     >

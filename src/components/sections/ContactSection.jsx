@@ -4,7 +4,7 @@ import logo from "../../assets/logos/blu-azur.png";
 
 export default function ContactSection() {
   return (
-    <section className="bg-[#4097FF] py-16 px-6">
+    <section id="contact" className="bg-[#4097FF] py-16 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
         <div className="flex-shrink-0">
           <img

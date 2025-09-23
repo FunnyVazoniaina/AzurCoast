@@ -19,6 +19,7 @@ export default function BestPlaceSection() {
 
   return (
     <section
+      id="activities"
       className="relative bg-cover bg-center py-20 px-6 text-white"
       style={{ backgroundImage: `url(${bgImage})` }}
     >

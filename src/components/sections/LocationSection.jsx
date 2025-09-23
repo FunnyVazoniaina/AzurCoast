@@ -6,6 +6,7 @@ import CTAButton from "../ui/CTAButton";
 export default function LocationSection() {
   return (
     <section
+      id="location"
       className="relative bg-cover bg-center py-20 px-6 text-gray-800"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
