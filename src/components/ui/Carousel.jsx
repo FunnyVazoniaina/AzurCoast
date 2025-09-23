@@ -18,7 +18,6 @@ export default function Carousel({ images }) {
           if (position > length / 2) position -= length;
           if (position <= -length / 2) position += length;
 
-          // Styles dynamiques
           const isActive = position === 0;
           const scale = isActive ? 1 : 0.8;
           const opacity = isActive ? 1 : 0.4;
