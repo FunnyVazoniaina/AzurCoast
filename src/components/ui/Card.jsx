@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ image, title, description }) {
   return (
-    <div className="bg-gray-900/90 text-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
+    <div className="bg-gray-900/90 text-white rounded-4xl shadow-lg overflow-hidden flex flex-col h-full">
       {/* Image */}
       <img
         src={image}

@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../ui/Card";
 
-import plage from "../../assets/images/diversity/img1.png";
-import montagne from "../../assets/images/diversity/img2.png";
-import gastronomie from "../../assets/images/diversity/img3.png";
-import culture from "../../assets/images/diversity/img4.png";
+import plage from "../../assets/images/diversity/img1.jpg";
+import montagne from "../../assets/images/diversity/img2.jpg";
+import gastronomie from "../../assets/images/diversity/img3.jpg";
+import culture from "../../assets/images/diversity/img4.jpg";
 import nightlife from "../../assets/images/diversity/img5.png";
 
 export default function DiversitySection() {
