@@ -1,4 +1,4 @@
-# Côte d’Azur – Site Touristique
+# Blu Azur – Site Touristique accessible sur https://blu-azur.vercel.app/
 
 > **Statut : Projet de test**  
 > Plateforme web moderne présentant les plus beaux lieux, activités et conseils pour découvrir la Côte d’Azur.
