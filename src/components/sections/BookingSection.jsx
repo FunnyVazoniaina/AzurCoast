@@ -5,14 +5,14 @@ import CTAButton from "../../components/ui/CTAButton";
 export default function BookingSection() {
   return (
     <section
-      className="relative py-20 px-6"
+      className="relative py-32 px-6 md:py-40" 
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Overlay dégradé de gauche vers droite */}
+      {/* Overlay dégradé */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#4896f1] to-transparent"></div>
 
       <div className="relative max-w-4xl mx-auto text-center text-white">
@@ -25,7 +25,7 @@ export default function BookingSection() {
         </p>
 
         {/* Bouton centré */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-8">
           <CTAButton
             text="Réserver dès maintenant votre séjour !"
             onClick={() => alert("Réservation !")}
