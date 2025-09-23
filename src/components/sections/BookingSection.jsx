@@ -5,7 +5,7 @@ import CTAButton from "../../components/ui/CTAButton";
 export default function BookingSection() {
   return (
     <section
-      className="relative py-32 px-6 md:py-40" 
+      className="relative py-52 px-6 md:py-40" 
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
