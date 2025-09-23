@@ -5,6 +5,7 @@ import AboutBluAzur from './components/sections/AboutBluAzur'
 import BestPlaceSection from './components/sections/BestPlaceSection'
 import LocationSection from './components/sections/LocationSection'
 import StartingPointSection from './components/sections/StartingPointSection'
+import DiversitySection from './components/sections/DiversitySection'
 import BookingSection from './components/sections/BookingSection'
 import ContactSection from './components/sections/ContactSection'
 import Footer from './components/layouts/Footer'
@@ -20,6 +21,7 @@ function App() {
       <BestPlaceSection />
       <LocationSection />
       <StartingPointSection />
+      <DiversitySection />
       <BookingSection />
       <ContactSection />
 
