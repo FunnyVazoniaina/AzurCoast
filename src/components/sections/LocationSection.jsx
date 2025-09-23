@@ -1,6 +1,7 @@
 import React from "react";
 import bgImage from "../../assets/images/location/bg-image.png";
 import mapImg from "../../assets/images/location/map.png";
+import CTAButton from "../ui/CTAButton";
 
 export default function LocationSection() {
   return (
@@ -9,17 +10,17 @@ export default function LocationSection() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Overlay léger pour lisibilité */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-white/30"></div>
 
       <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Colonne gauche (texte) */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Où se trouve Blu Azur à <br />
+          <h2 className="text-3xl md:text-4xl mb-6">
+            <span className="font-medium">Où se trouve Blu Azur à</span> <br />
             <span className="font-extrabold">Saint-Raphaël ?</span>
           </h2>
 
-          <p className="text-white text-lg leading-relaxed">
+          <p className="text-gray-800 text-lg leading-relaxed">
             Blu Azur est idéalement situé entre Saint-Tropez et Cannes, au cœur
             de l’une des plus belles stations balnéaires de France. Nos
             appartements se trouvent dans un domaine privé sécurisé, entouré de
@@ -31,6 +32,13 @@ export default function LocationSection() {
             proximité vous offre du pain frais chaque matin pour bien commencer
             la journée.
           </p>
+
+          {/* Bouton CTA */}
+          <CTAButton
+            text="Comment s'y rendre ?"
+            onClick={() => alert("Location desplayed here !")}
+            className="border-[#4097FF] text-[#4097FF] hover:bg-[#4097FF] hover:text-white"
+          />
         </div>
 
         {/* Colonne droite (card carte) */}

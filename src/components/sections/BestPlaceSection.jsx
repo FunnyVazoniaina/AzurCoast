@@ -7,7 +7,7 @@ import icon4 from "../../assets/icons/bestPlace/icon4.png";
 import icon5 from "../../assets/icons/bestPlace/icon5.png";
 import icon6 from "../../assets/icons/bestPlace/icon6.png";
 
-export default function BestPlace() {
+export default function BestPlaceSection() {
   const icons = [
     { img: icon1, desc: "Sports nautiques,\nplongée, voile" },
     { img: icon2, desc: "Randonnées et vélo\ndans l’Estérel" },

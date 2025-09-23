@@ -3,8 +3,10 @@ import Header from './components/layouts/Header'
 import Sidebar from './components/layouts/Sidebar'
 import HeroSection from './components/sections/HeroSection'
 import AboutBluAzur from './components/sections/AboutBluAzur'
-import BestPlace from './components/sections/BestPlace'
+import BestPlaceSection from './components/sections/BestPlaceSection'
+import LocationSection from './components/sections/LocationSection'
 import Footer from './components/layouts/Footer'
+
 
 function App() {
 
@@ -13,7 +15,8 @@ function App() {
       {/* Sections */}
       <HeroSection />
       <AboutBluAzur />
-      <BestPlace />
+      <BestPlaceSection />
+      <LocationSection />
 
       {/* Layouts */}
       <Header />
