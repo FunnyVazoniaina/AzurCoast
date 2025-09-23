@@ -8,20 +8,18 @@ import img3 from "../../assets/images/carousel/img3.png";
 
 export default function HeroSection() {
   const images = [img1, img2, img3];
-  
+
   return (
     <section
       id="home"
       className="w-full h-screen relative bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      {/* Overlay sombre gauche -> droite */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/80 via-black/30 to-transparent pointer-events-none"></div>
-      
+
       {/* Contenu principal */}
       <div className="relative z-10 flex flex-col justify-start md:justify-center h-full max-w-7xl mx-auto px-6 md:px-12">
-        {/* Contenu texte - Repositionné pour éviter les superpositions */}
-        <div className="pt-32 sm:pt-40 md:pt-0 max-w-lg lg:max-w-2xl text-white">
+        <div className="pt-48 sm:pt-56 md:pt-0 max-w-lg lg:max-w-2xl text-white">
           <h1 className="text-4xl md:text-6xl mb-6">
             <span className="font-extrabold">Votre évasion </span> <br />
             <span className="font-medium">sur la Côte d'Azur !</span>
@@ -42,16 +40,11 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      
-      {/* Carousel - Positionné correctement */}
-      <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-[200px] md:w-[350px] z-20">
-        <Carousel 
-          images={images} 
-          heightClass="h-28 md:h-44" 
-        />
-      </div>
-      
 
+      {/* Carousel */}
+      <div className="absolute bottom-6 left-[calc(50%+1.5rem)] transform -translate-x-1/2 md:left-auto md:right-12 md:transform-none w-[200px] md:w-[350px] z-20">
+        <Carousel images={images} heightClass="h-28 md:h-44" />
+      </div>
     </section>
   );
 }
