@@ -1,0 +1,40 @@
+import React from "react";
+import { Mail, Phone, Facebook } from "lucide-react";
+import logo from "../../assets/logos/blu-azur.png";
+
+export default function ContactSection() {
+  return (
+    <section className="bg-[#4097FF] py-16 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+        <div className="flex-shrink-0">
+          <img
+            src={logo}
+            alt="Blu Azur Logo"
+            className="h-24 md:h-32 object-contain"
+          />
+        </div>
+
+        <div className="flex flex-col gap-6 text-white text-lg">
+          <h2 className="text-2xl md:text-3xl font-extrabold">
+            Contactez-nous
+          </h2>
+
+          <div className="flex items-center gap-3">
+            <Mail size={24} />
+            <span>info@bluazur.com</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Phone size={24} />
+            <span>+1 555 555-5555</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Facebook size={24} />
+            <span>@ BLU Azur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
