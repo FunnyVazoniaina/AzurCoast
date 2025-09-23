@@ -69,7 +69,7 @@ export default function Header() {
                 onClick={() => { setOpen(false); setActive(item.id); }}
                 className={`pb-1 transition-colors ${
                   active === item.id
-                    ? "text-gray-700" // gris foncé pour actif
+                    ? "text-gray-700" 
                     : "hover:after:absolute hover:after:-bottom-1 hover:after:left-0 hover:after:w-full hover:after:h-0.5 hover:after:bg-white after:transition-all after:duration-300"
                 }`}
               >
