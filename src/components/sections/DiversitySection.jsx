@@ -58,6 +58,7 @@ export default function DiversitySection() {
                 title={item.title}
                 description={item.description}
                 other={item.other} 
+                buttonText="Consulter la liste des meilleurs restaurants" 
               />
             </div>
           ))}

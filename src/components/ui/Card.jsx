@@ -1,6 +1,7 @@
 import React from "react";
+import CTAButton from "./CTAButton";
 
-export default function Card({ image, title, description, other }) {
+export default function Card({ image, title, description, other, buttonText }) {
   return (
     <div className="bg-gray-900/90 text-white rounded-4xl shadow-lg overflow-hidden flex flex-col h-full">
       {/* Image */}
@@ -11,7 +12,7 @@ export default function Card({ image, title, description, other }) {
         <h3 className="text-xl font-bold mb-3">{title}</h3>
         <p className="text-sm text-gray-200 flex-1">{description}</p>
 
-        {/* Affichage conditionnel du lien */}
+        {/* Affichage optionnel du lien */}
         {other && (
           <p className="text-sm text-blue-400 mt-4">
             A voir :{" "}
@@ -24,6 +25,15 @@ export default function Card({ image, title, description, other }) {
               {other}
             </a>
           </p>
+        )}
+
+        {/* Affichage optionnel du bouton */}
+        {buttonText && (
+          <CTAButton
+            text={buttonText}
+            onClick={() => alert(`Action sur : ${title}`)}
+            className="mt-4 border-blue-600 text-blue-600 bg-transparent hover:bg-blue-600 hover:text-white px-3 py-1.5 gap-1 justify-center"
+          />
         )}
       </div>
     </div>
