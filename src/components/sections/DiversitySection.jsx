@@ -46,27 +46,26 @@ export default function DiversitySection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Grille personnalisée */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
-  {diversities.slice(0, 2).map((item, index) => (
-    <div key={index} className="md:col-span-3 flex">
-      <Card
-        image={item.image}
-        title={item.title}
-        description={item.description}
-      />
-    </div>
-  ))}
+          {diversities.slice(0, 2).map((item, index) => (
+            <div key={index} className="md:col-span-3 flex">
+              <Card
+                image={item.image}
+                title={item.title}
+                description={item.description}
+              />
+            </div>
+          ))}
 
-  {diversities.slice(2).map((item, index) => (
-    <div key={index} className="md:col-span-2 flex">
-      <Card
-        image={item.image}
-        title={item.title}
-        description={item.description}
-      />
-    </div>
-  ))}
-</div>
-
+          {diversities.slice(2).map((item, index) => (
+            <div key={index} className="md:col-span-2 flex">
+              <Card
+                image={item.image}
+                title={item.title}
+                description={item.description}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

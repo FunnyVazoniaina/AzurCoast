@@ -32,17 +32,15 @@ export default function BestPlaceSection() {
           <span className="font-medium">
             Saint Raphaël, l’endroit parfait pour <br />
           </span>
-          <span className="font-extrabold">
-            vivre la Côte d’Azur
-          </span>
+          <span className="font-extrabold">vivre la Côte d’Azur</span>
         </h2>
 
         {/* Description */}
         <p className="max-w-2xl mx-auto text-lg mb-12 leading-relaxed">
           Avec ses plages dorées, ses 300 jours de soleil et ses calanques
           sauvages, Saint-Raphaël est une destination de rêve. Entre mer
-          turquoise et rochers rouges de l’Estérel, elle offre un cadre idyllique
-          pour la détente et l’aventure.
+          turquoise et rochers rouges de l’Estérel, elle offre un cadre
+          idyllique pour la détente et l’aventure.
         </p>
 
         {/* Liste horizontale avec icônes */}
@@ -50,7 +48,11 @@ export default function BestPlaceSection() {
           {icons.map((item, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <div className="w-16 h-16 mb-3">
-                <img src={item.img} alt={`Icon ${idx + 1}`} className="w-full h-full object-contain" />
+                <img
+                  src={item.img}
+                  alt={`Icon ${idx + 1}`}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <p className="text-sm whitespace-pre-line">{item.desc}</p>
             </div>

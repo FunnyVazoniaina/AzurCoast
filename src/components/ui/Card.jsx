@@ -4,11 +4,7 @@ export default function Card({ image, title, description }) {
   return (
     <div className="bg-gray-900/90 text-white rounded-4xl shadow-lg overflow-hidden flex flex-col h-full">
       {/* Image */}
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-56 object-cover"
-      />
+      <img src={image} alt={title} className="w-full h-56 object-cover" />
 
       {/* Contenu */}
       <div className="flex flex-col flex-1 p-6">

@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../../components/ui/Carousel"; 
+import Carousel from "../../components/ui/Carousel";
 import img1 from "../../assets/images/about/img1.png";
 import img2 from "../../assets/images/about/img2.jpg";
 
@@ -34,7 +34,12 @@ export default function AboutBluAzur() {
             <li>Télévision, téléphone et Wi-Fi (accès au salon)</li>
             <li>Réfrigérateur, cuisinière, lave-vaisselle, vaisselle</li>
             <li>Kit bébé : lit parapluie avec matelas et chaise haute</li>
-            <li>Autres commodités en prêt à la réception: jeux de société, livres, raquettes et balles de ping-pong, sèche-cheveux, fer et planche à repasser, adaptateur pour les prises étrangères et cache-prises pour les enfants.</li>
+            <li>
+              Autres commodités en prêt à la réception: jeux de société, livres,
+              raquettes et balles de ping-pong, sèche-cheveux, fer et planche à
+              repasser, adaptateur pour les prises étrangères et cache-prises
+              pour les enfants.
+            </li>
           </ul>
         </div>
 

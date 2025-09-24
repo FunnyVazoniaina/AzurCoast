@@ -6,7 +6,11 @@ export default function StartingPointSection() {
   return (
     <section
       className="relative py-20 px-6"
-      style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       {/* Overlay léger pour améliorer la lisibilité */}
       <div className="absolute inset-0 bg-black/40"></div>
@@ -30,9 +34,14 @@ export default function StartingPointSection() {
           </h2>
 
           <p className="text-white text-lg leading-relaxed">
-            Entre mer et montagne, Saint-Raphaël est une destination idéale pour les amateurs de plein air et de découvertes. 
-            Randonnées dans le Massif de l’Estérel, sports nautiques sur les eaux cristallines de la Méditerranée, balades en bateau vers les îles de Lérins ou encore golf et cyclisme sur des parcours panoramiques, chaque journée offre son lot d’aventures. 
-            Entre marchés provençaux, villages perchés et animations locales, l’art de vivre azuréen se dévoile à chaque instant, faisant de Saint-Raphaël un lieu vibrant et inoubliable.
+            Entre mer et montagne, Saint-Raphaël est une destination idéale pour
+            les amateurs de plein air et de découvertes. Randonnées dans le
+            Massif de l’Estérel, sports nautiques sur les eaux cristallines de
+            la Méditerranée, balades en bateau vers les îles de Lérins ou encore
+            golf et cyclisme sur des parcours panoramiques, chaque journée offre
+            son lot d’aventures. Entre marchés provençaux, villages perchés et
+            animations locales, l’art de vivre azuréen se dévoile à chaque
+            instant, faisant de Saint-Raphaël un lieu vibrant et inoubliable.
           </p>
         </div>
       </div>
