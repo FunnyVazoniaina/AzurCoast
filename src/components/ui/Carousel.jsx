@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-export default function Carousel({ images, heightClass = "h-80" }) {
+export default function Carousel({
+  images,
+  heightClass = "h-80",
+  customImageClass,
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const length = images.length;
 
@@ -14,7 +17,9 @@ export default function Carousel({ images, heightClass = "h-80" }) {
 
   return (
     <div className="relative w-full max-w-4xl mx-auto overflow-hidden">
-      <div className={`relative flex items-center justify-center ${heightClass}`}>
+      <div
+        className={`relative flex items-center justify-center ${heightClass}`}
+      >
         {images.map((img, index) => {
           let position = index - currentIndex;
           if (position > length / 2) position -= length;
@@ -38,7 +43,10 @@ export default function Carousel({ images, heightClass = "h-80" }) {
               <img
                 src={img}
                 alt={`Slide ${index + 1}`}
-                className="w-32 h-20 xs:w-40 xs:h-24 sm:w-48 sm:h-32 md:w-64 md:h-40 lg:w-80 lg:h-52 object-cover rounded-lg shadow-lg"
+                className={
+                  customImageClass ||
+                  "w-32 h-20 xs:w-40 xs:h-24 sm:w-48 sm:h-32 md:w-64 md:h-40 lg:w-80 lg:h-52 object-cover rounded-lg shadow-lg"
+                }
               />
             </div>
           );

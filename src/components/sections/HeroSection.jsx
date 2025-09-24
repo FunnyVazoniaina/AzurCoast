@@ -42,9 +42,12 @@ export default function HeroSection() {
       </div>
 
       {/* Carousel */}
-      {/* Carousel */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 md:bottom-12 md:right-6 md:left-auto md:transform-none w-[200px] md:w-[350px] z-20 pr-4 pb-auto md:pr-6 md:pb-40">
-        <Carousel images={images} heightClass="h-28 md:h-44" />
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 md:bottom-12 md:right-6 md:left-auto md:transform-none w-[280px] sm:w-[320px] md:w-[450px] lg:w-[500px] z-20 pr-auto pb-auto md:pr-auto md:pb-30">
+        <Carousel
+          images={images}
+          heightClass="h-28 md:h-44"
+          customImageClass="w-60 h-16 xs:w-64 xs:h-20 sm:w-72 sm:h-24 md:w-80 md:h-28 lg:w-96 lg:h-32 xl:w-[28rem] xl:h-36 object-cover rounded-3xl shadow-lg"
+        />
       </div>
     </section>
   );
