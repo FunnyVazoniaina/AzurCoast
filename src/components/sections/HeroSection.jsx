@@ -24,7 +24,7 @@ export default function HeroSection() {
             <span className="font-extrabold">Votre évasion </span> <br />
             <span className="font-medium">sur la Côte d'Azur !</span>
           </h1>
-          <p className="text-sm md:text-base leading-relaxed mb-8">
+          <p className="text-sm md:text-lg leading-relaxed mb-8">
             Blu Azur vous invite à découvrir le charme de Saint-Raphaël, une
             destination d'exception nichée entre Cannes et Saint-Tropez. Nos
             appartements tout équipés, situés dans un domaine privé sécurisé,
@@ -42,7 +42,8 @@ export default function HeroSection() {
       </div>
 
       {/* Carousel */}
-      <div className="absolute bottom-6 left-[calc(50%+1.5rem)] transform -translate-x-1/2 md:left-auto md:right-12 md:transform-none w-[200px] md:w-[350px] z-20">
+      {/* Carousel */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 md:bottom-12 md:right-6 md:left-auto md:transform-none w-[200px] md:w-[350px] z-20 pr-4 pb-auto md:pr-6 md:pb-40">
         <Carousel images={images} heightClass="h-28 md:h-44" />
       </div>
     </section>
