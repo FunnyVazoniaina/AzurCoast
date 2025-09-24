@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
 export default function Carousel({
   images,
   heightClass = "h-80",
@@ -26,16 +27,20 @@ export default function Carousel({
           if (position <= -length / 2) position += length;
 
           const isActive = position === 0;
-          const scale = isActive ? 1 : 0.7;
+          // Ajustement du scale pour mobile - moins de réduction
+          const scale = isActive ? 1 : window.innerWidth < 768 ? 0.85 : 0.7;
           const opacity = isActive ? 1 : 0.4;
           const zIndex = isActive ? 20 : 10;
+          
+          // Ajustement de l'espacement pour mobile
+          const spacing = window.innerWidth < 768 ? 35 : 45;
 
           return (
             <div
               key={index}
               className="absolute top-0 left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-in-out"
               style={{
-                transform: `translateX(${position * 45}%) scale(${scale})`,
+                transform: `translateX(${position * spacing}%) scale(${scale})`,
                 zIndex,
                 opacity,
               }}
@@ -45,7 +50,7 @@ export default function Carousel({
                 alt={`Slide ${index + 1}`}
                 className={
                   customImageClass ||
-                  "w-32 h-20 xs:w-40 xs:h-24 sm:w-48 sm:h-32 md:w-64 md:h-40 lg:w-80 lg:h-52 object-cover rounded-lg shadow-lg"
+                  "w-64 h-40 xs:w-72 xs:h-44 sm:w-80 sm:h-48 md:w-96 md:h-56 lg:w-[28rem] lg:h-64 xl:w-[32rem] xl:h-72 object-cover rounded-lg shadow-lg"
                 }
               />
             </div>
